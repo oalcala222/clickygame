@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import Nav from './components/nav/nav';
+import Header from './components/header/header';
+import Main from './components/main/main';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+function App(props) {
+ return (
+      <div className= "container-fluid">
+        <Nav>The Simpsons Clicky Game</Nav>
+        <Header />
+        <Main />
+      </div>
+    );
+  }
+
 
 export default App;
